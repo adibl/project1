@@ -10,6 +10,7 @@ class Student:
         self.properties = []
         self.properties = line[:-2]
 
+
     def get_properties(self):
         return self.properties
 
@@ -59,7 +60,9 @@ class Student:
         return self
 
     def __str__(self):
-        line = str(self.properties)[1:-1]+","
+        line =""
+        for prop in self.properties:
+            line += str(prop)+","
         for s in self.subject:
-            line += str(s)[1:-1]
-        return line
+            line += str(s[0])+","+str(s[1]) +","
+        return line[:-1]

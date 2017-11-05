@@ -77,6 +77,6 @@ if __name__ == '__main__':
     s1.add_subject(['computer science', "5"])
     s1.add_subject(['physics', "5"])
     assert s1.is_amat()
-    print str(s1)
-    assert str(s1) == "rob, 1212, first, male, english, 5"
+    s1.scientific_subjects()
+    assert str(s1) == "rob,1212,first,male,math,5,computer science,5,physics,5"
     main()
