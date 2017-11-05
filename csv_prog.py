@@ -40,7 +40,7 @@ def main():
     students = []
     for line in lines:
         if if_have(line, students) is not None:
-            if_have(line, students).add_subject(line)
+            if_have(line, students).add_subject(line[-2:])
         else:
             students.append(Student(line))
 
@@ -60,6 +60,10 @@ if __name__ == '__main__':
     s1 = Student(["rob", "1212", "first", "male", "math", "5"])
     s2 = Student(line2)
     assert s1.is_same(s2)
-    assert s1.add_subject(line2) == (['math', 'english'], ['5', '5'])
+    assert s1.add_subject(line2[-2:]) == ([("math", "5"), ("english", "5")])
     assert s1.get_properties() == ["rob", "1212", "first", "male"]
+    assert not s1.is_amat()
+    s1.add_subject(['computer science', "5"])
+    s1.add_subject(['physics', "5"])
+    assert s1.is_amat()
     main()
