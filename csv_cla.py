@@ -50,7 +50,16 @@ class Student:
                 is_computer = True
         return is_math and is_scientific and is_computer
 
+    def scientific_subjects(self):
+        subjects=[]
+        for sub in self.subject:
+            if  (sub  in Student.SCIENCE_SUBJECTS_NEED_ONE or sub in Student.SCIENCE_SUBJECTS or sub in Student.SCIENCE_SUBJECTS_MUST_HAVE):
+                subjects.append(sub)
+        self.subject = subjects
+        return self
+
     def __str__(self):
-        line = str(self.properties)
-        line += str(self.subject)
+        line = str(self.properties)[1:-1]+","
+        for s in self.subject:
+            line += str(s)[1:-1]
         return line

@@ -4,6 +4,7 @@ sys.path.append('.')
 from csv_cla import Student
 
 FILE_DIRECTORY = "csv_westerose.csv"
+NEW_FILE_NAME = "amat.csv"
 
 
 def text_to_lines(text):
@@ -50,6 +51,19 @@ def main():
             if_have(line, students).add_subject(line[-2:])
         else:
             students.append(Student(line))
+        amat=[]
+    for student in students:
+        if student.is_amat():
+            amat.append(student)
+    for student in amat:
+        student.scientific_subjects()
+    new_file=open(NEW_FILE_NAME, "w")
+    for s in amat:
+        new_file.write(str(s)+"\n")
+    new_file.close()
+
+
+
 
 
 if __name__ == '__main__':
@@ -63,4 +77,6 @@ if __name__ == '__main__':
     s1.add_subject(['computer science', "5"])
     s1.add_subject(['physics', "5"])
     assert s1.is_amat()
+    print str(s1)
+    assert str(s1) == "rob, 1212, first, male, english, 5"
     main()
