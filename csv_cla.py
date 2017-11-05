@@ -50,10 +50,7 @@ class Student:
                 is_computer = True
         return is_math and is_scientific and is_computer
 
-
-
     def __str__(self):
         line = str(self.properties)
         line += str(self.subject)
-        line += str(self.level)
         return line

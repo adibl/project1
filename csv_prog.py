@@ -5,6 +5,7 @@ from csv_cla import Student
 
 FILE_DIRECTORY = "csv_westerose.csv"
 
+
 def text_to_lines(text):
     """
     :var:text: lines of text
@@ -49,16 +50,6 @@ def main():
             if_have(line, students).add_subject(line[-2:])
         else:
             students.append(Student(line))
-
-
-
-
-
-
-
-
-
-
 
 
 if __name__ == '__main__':
