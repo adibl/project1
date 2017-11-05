@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-\
 import sys
 sys.path.append('.')
-from cla import Student
+from csv_cla import Student
 
+FILE_DIRECTORY = "csv_westerose.csv"
 
 def text_to_lines(text):
     """
@@ -29,12 +30,11 @@ def if_have(new_student, list_of_students):
     return None
 
 
-
 def main():
     """
     Add Documentation here
     """
-    with open("westerose.csv", 'r') as input_file:
+    with open(FILE_DIRECTORY, 'r') as input_file:
         text = input_file.read()
     lines = text_to_lines(text)
     students = []
@@ -55,6 +55,11 @@ def main():
 
 
 
-
 if __name__ == '__main__':
+    line2=["rob", "1212", "first", "male", "english", "5"]
+    s1 = Student(["rob", "1212", "first", "male", "math", "5"])
+    s2 = Student(line2)
+    assert s1.is_same(s2)
+    assert s1.add_subject(line2) == (['math', 'english'], ['5', '5'])
+    assert s1.get_properties() == ["rob", "1212", "first", "male"]
     main()
