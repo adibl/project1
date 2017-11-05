@@ -24,6 +24,12 @@ def text_to_lines(text):
 
 
 def if_have(new_student, list_of_students):
+    """
+    cack if the student is exzisting on the lise
+    :var:new_stident: line of a student
+    :var:list_of_students: list of students
+    :return: None if the student is not in the list, if it si return the student
+    """
     for student in list_of_students:
         if new_student[:-2] == student.get_properties():
             return student
@@ -56,7 +62,7 @@ def main():
 
 
 if __name__ == '__main__':
-    line2=["rob", "1212", "first", "male", "english", "5"]
+    line2 = ["rob", "1212", "first", "male", "english", "5"]
     s1 = Student(["rob", "1212", "first", "male", "math", "5"])
     s2 = Student(line2)
     assert s1.is_same(s2)
