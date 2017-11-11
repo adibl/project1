@@ -1,5 +1,6 @@
 class Student:
-    SCIENCE = [('physics', "5"), ('chemistry', "5"), ('Arabic', "5"), ('biology', "5")]
+    SCIENCE = [('physics', "5"), ('chemistry', "5"),
+               ('Arabic', "5"), ('biology', "5")]
     MATH = [("math", "5")]
     COMPUTER = [('computer science', "5"), ("computer science", "10")]
 
@@ -17,7 +18,8 @@ class Student:
         """
         check if the student line and this student are the same
         :var:student: student line
-        :return: true if the student properties are the same and false otherwise
+        :return: true if the student properties are the same
+        and false otherwise
         """
         if student.get_properties() == self.properties:
             return True
@@ -53,8 +55,8 @@ class Student:
     def scientific_subjects(self):
         subjects = []
         for sub in self.subject:
-            if (
-                            (sub in Student.COMPUTER) or (sub in Student.SCIENCE) or (sub in Student.MATH)):
+            if ((sub in Student.COMPUTER) or
+                    (sub in Student.SCIENCE) or (sub in Student.MATH)):
                 subjects.append(sub)
         self.subject = subjects
         return
