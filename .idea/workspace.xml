@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="594b5379-83e9-4987-9521-3e46fec9314b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csv_cla.py" afterPath="$PROJECT_DIR$/csv_cla.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csv_prog.py" afterPath="$PROJECT_DIR$/csv_prog.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,7 +29,7 @@
       <file leaf-file-name="csv_prog.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csv_prog.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="46" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.15361446" vertical-offset="629" max-vertical-offset="1700">
+            <state line="92" column="77" selection-start="2617" selection-end="2617" vertical-scroll-proportion="1.6944746" vertical-offset="0" max-vertical-offset="1700">
               <folding>
                 <element signature="e#287#314#0" expanded="true" />
               </folding>
@@ -41,7 +40,7 @@
       <file leaf-file-name="csv_cla.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csv_cla.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="22" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="1496">
+            <state line="11" column="30" selection-start="229" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1496">
               <folding />
             </state>
           </provider>
@@ -99,7 +98,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -120,6 +118,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,14 +368,17 @@
       <created>1510390312189</created>
       <updated>1510390312189</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="documentation">
+      <created>1510391144223</created>
+      <updated>1510391144223</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -385,12 +387,13 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39936775" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27291885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27291885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -419,7 +422,8 @@
     <MESSAGE value="not working" />
     <MESSAGE value="fixed bag" />
     <MESSAGE value="pep 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="pep 8" />
+    <MESSAGE value="documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -430,6 +434,38 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/csv_prog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="77" selection-start="2617" selection-end="2617" vertical-scroll-proportion="0.0" vertical-offset="1053" max-vertical-offset="1700">
+          <folding>
+            <element signature="e#287#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv_cla.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="30" selection-start="229" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv_prog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="46" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1700">
+          <folding>
+            <element signature="e#287#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv_cla.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="22" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/csv_prog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="35" selection-start="1513" selection-end="1513" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="1496">
@@ -496,14 +532,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csv_cla.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="22" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="1496">
+        <state line="11" column="30" selection-start="229" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csv_prog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="46" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.15361446" vertical-offset="629" max-vertical-offset="1700">
+        <state line="92" column="77" selection-start="2617" selection-end="2617" vertical-scroll-proportion="1.6944746" vertical-offset="0" max-vertical-offset="1700">
           <folding>
             <element signature="e#287#314#0" expanded="true" />
           </folding>
