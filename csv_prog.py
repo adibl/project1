@@ -56,7 +56,7 @@ def main():
         if student.is_amat():
             amat.append(student)
     for student in amat:
-        student.scientific_subjects()
+        student.scientific_subjects
     new_file=open(NEW_FILE_NAME, "w")
     for s in amat:
         new_file.write(str(s)+"\n")
@@ -77,6 +77,7 @@ if __name__ == '__main__':
     s1.add_subject(['computer science', "5"])
     s1.add_subject(['physics', "5"])
     assert s1.is_amat()
-    s1.scientific_subjects()
+    s1.scientific_subjects
+    print str(s1)
     assert str(s1) == "rob,1212,first,male,math,5,computer science,5,physics,5"
     main()

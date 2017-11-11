@@ -1,7 +1,7 @@
 class Student:
-    SCIENCE_SUBJECTS = [('physics', "5"), ('chemistry', "5"), ('Arabic', "5"), ('biology', "5")]
-    SCIENCE_SUBJECTS_MUST_HAVE = [("math", "5")]
-    SCIENCE_SUBJECTS_NEED_ONE = [('computer science', "5"), ("computer science", "10")]
+    SCIENCE = [('physics', "5"), ('chemistry', "5"), ('Arabic', "5"), ('biology', "5")]
+    MATH = [("math", "5")]
+    COPUTER_SCIENCE = [('computer science', "5"), ("computer science", "10")]
 
     def __init__(self, line):
 
@@ -43,26 +43,26 @@ class Student:
         is_computer = False
         is_math = False
         for sub in self.subject:
-            if sub in Student.SCIENCE_SUBJECTS:
+            if sub in Student.SCIENCE:
                 is_scientific = True
-            if sub in Student.SCIENCE_SUBJECTS_MUST_HAVE:
+            if sub in Student.MATH:
                 is_math = True
-            if sub in Student.SCIENCE_SUBJECTS_NEED_ONE:
+            if sub in Student.COPUTER_SCIENCE:
                 is_computer = True
         return is_math and is_scientific and is_computer
 
     def scientific_subjects(self):
-        subjects=[]
+        subjects = []
         for sub in self.subject:
-            if  (sub  in Student.SCIENCE_SUBJECTS_NEED_ONE or sub in Student.SCIENCE_SUBJECTS or sub in Student.SCIENCE_SUBJECTS_MUST_HAVE):
+            if (sub in Student.COPUTER_SCIENCE or sub in Student.SCIENCE or sub in Student.MATH):
                 subjects.append(sub)
         self.subject = subjects
-        return self
+        return
 
     def __str__(self):
-        line =""
+        line = ""
         for prop in self.properties:
             line += str(prop)+","
         for s in self.subject:
-            line += str(s[0])+","+str(s[1]) +","
+            line += str(s[0])+","+str(s[1]) + ","
         return line[:-1]
