@@ -1,3 +1,12 @@
+"""
+writer: adi bleyer
+date: 11/11/2017
+ths file contain the student class.
+the class have init, str methode.
+the clas handel amat students
+"""
+
+
 class Student:
     SCIENCE = [('physics', "5"), ('chemistry', "5"),
                ('Arabic', "5"), ('biology', "5")]
@@ -53,13 +62,16 @@ class Student:
         return is_math and is_scientific and is_computer
 
     def scientific_subjects(self):
+        """
+        cange student subjects to amat subjects only,
+        delete all others.
+        """
         subjects = []
         for sub in self.subject:
             if ((sub in Student.COMPUTER) or
                     (sub in Student.SCIENCE) or (sub in Student.MATH)):
                 subjects.append(sub)
         self.subject = subjects
-        return
 
     def __str__(self):
         line = ""

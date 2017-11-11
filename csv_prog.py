@@ -1,7 +1,17 @@
 # -*- coding: utf-8 -*-\
+"""
+writer: adi bleyer
+date: 11/11/2017
+this file contain the main prog.
+the file have funcsions that take care of csv files
+and funcsions thet hundle the student class.
+the main take a csv file of students
+and return new one that contain only amat students
+"""
+from csv_cla import Student
 import sys
 sys.path.append('.')
-from csv_cla import Student
+
 
 FILE_DIRECTORY = "csv_westerose.csv"
 NEW_FILE_NAME = "amat.csv"
@@ -10,7 +20,8 @@ NEW_FILE_NAME = "amat.csv"
 def text_to_lines(text):
     """
     :var:text: lines of text
-    :return: list of tupls, tuple is one raw. the object iside the tupels id splited by ,
+    :return: list of tupls, tuple is one raw.
+    the object iside the tupels id splited by ,
     """
     line = ""
     lines = []
@@ -30,7 +41,8 @@ def if_have(new_student, list_of_students):
     cack if the student is exzisting on the lise
     :var:new_stident: line of a student
     :var:list_of_students: list of students
-    :return: None if the student is not in the list, if it si return the student
+    :return: None if the student is not in the list.
+    if it is return the student
     """
     for student in list_of_students:
         if new_student[:-2] == student.get_properties():
@@ -40,7 +52,10 @@ def if_have(new_student, list_of_students):
 
 def main():
     """
-    Add Documentation here
+    open the csv file.
+    read all the students from him.
+    create a new file of amat students only
+    the new file contain just the amat subjects
     """
     with open(FILE_DIRECTORY, 'r') as input_file:
         text = input_file.read()
@@ -51,7 +66,7 @@ def main():
             if_have(line, students).add_subject(line[-2:])
         else:
             students.append(Student(line))
-        amat=[]
+        amat = []
     for student in students:
         if student.is_amat():
             amat.append(student)
@@ -61,9 +76,6 @@ def main():
     for s in amat:
         new_file.write(str(s)+"\n")
     new_file.close()
-
-
-
 
 
 if __name__ == '__main__':
