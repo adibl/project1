@@ -87,8 +87,8 @@ if __name__ == '__main__':
     assert s1.get_properties() == ["rob", "1212", "first", "male"]
     assert not s1.is_amat()
     s1.add_subject(['computer science', "5"])
-    s1.add_subject(['Arabic', "5"])
+    s1.add_subject(['arabic', "5"])
     assert s1.is_amat()
     s1.scientific_subjects()
-    assert str(s1) == "rob,1212,first,male,math,5,computer science,5,Arabic,5"
+    assert str(s1) == "rob,1212,first,male,math,5,computer science,5,arabic,5"
     main()

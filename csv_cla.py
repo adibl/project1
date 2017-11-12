@@ -9,7 +9,7 @@ the clas handel amat students
 
 class Student:
     SCIENCE = [('physics', "5"), ('chemistry', "5"),
-               ('Arabic', "5"), ('biology', "5")]
+               ('arabic', "5"), ('biology', "5")]
     MATH = [("math", "5")]
     COMPUTER = [('computer science', "5"), ("computer science", "10")]
 
